@@ -7,7 +7,7 @@ const answer = await inquirer.prompt([
         message: "Select one of the operator to perform operator",
         name: "operator",
         type: "list",
-        choices: ["Addition", "Subtraction", "Multiplication", "Division"],
+        choices: ["Addition", "Subtraction", "Multiplication"],
     }
 ]);
 // conditional statement
@@ -19,9 +19,8 @@ else if (answer.operator === "Subtraction") {
 }
 else if (answer.operator === "Multipliction") {
     console.log(answer.firstNumber * answer.secondNumber);
-}
-else if (answer.operator === "Division") {
-    console.log(answer.firstNumber / answer.secondNumber);
+    // }else if (answer.operator === "Division") {
+    //     console.log(answer.firstNumber / answer.secondNumber);
 }
 else {
     console.log("please enter your valiad number");
